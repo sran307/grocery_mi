@@ -713,7 +713,7 @@ $code="INR";
         </div>
     </footer>
 
-      <script src="{{ asset('assetsGrocery/js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{ asset('assetsGrocery/js/jquery-3.3.1.min.js')}}"></script>
     <script src="{{ asset('assetsGrocery/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     <script src="{{ asset('assetsGrocery/vendor/OwlCarousel/owl.carousel.js')}}"></script>
     <script src="{{ asset('assetsGrocery/vendor/semantic/semantic.min.js')}}"></script>

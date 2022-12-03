@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+namespace App\Models;
+
 <head>
 	<title>SmartHub Groceries </title>
 	
