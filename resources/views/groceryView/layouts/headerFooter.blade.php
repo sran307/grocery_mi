@@ -48,7 +48,7 @@ if($foo_left_offer) {
   $en_date2 = date('Y-m-d', strtotime($foo_left_offer->ad_end_date));
 }
 
-$districts=App\Pincode::all();
+$districts=App\Models\Pincode::all()->take(10);
 
 $facebook= \DB::table('social_media_settings')->value("facebook_page_url");
 $twitter= \DB::table('social_media_settings')->value("twitter_page_url");

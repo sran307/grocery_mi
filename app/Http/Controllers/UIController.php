@@ -175,7 +175,7 @@ class UIController extends Controller
     return View::make("groceryView.index")->with(array('recently_added'=>$recently_added,'banner_images'=>$banner_images, 'main_cat'=>$main_cat, 'brand'=>$brand, 'first_cat'=>$first_cat, 'second_cat'=>$second_cat, 'third_cat'=>$third_cat, 'first_products'=>$first_products, 'second_products'=>$second_products, 'third_products'=>$third_products, 'top_products'=>$top_products, 'featured_products'=>$featured_products, 'best_seller'=>$best_seller, 'widget'=>$widget));
     }
     public function Home () {
-        return View::make("coming_soon");
+        // return View::make("coming_soon");
         
         $merchant = User::WhereIn('user_type',[2,3])->Where('is_block',1)->get();
         $banner_images = BannerImageSettings::Where('is_block',1)->get();

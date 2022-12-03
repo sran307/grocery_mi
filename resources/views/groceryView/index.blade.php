@@ -101,7 +101,7 @@ $code="INR";
 					<div class="col-md-12">
 						<div class="main-title-tt">
 							<div class="main-title-left">
-								<h2>{{App\HeadingModel::where("id", 7)->value("heading")}} </h2> </div>
+								<h2>{{App\Models\HeadingModel::where("id", 7)->value("heading")}} </h2> </div>
 						</div>
 					</div>
 					<div class="col-md-12">
@@ -151,7 +151,7 @@ $code="INR";
 					<div class="col-md-12">
 						<div class="main-title-tt">
 							<div class="main-title-left">
-								<h2>{{App\HeadingModel::where("id", 1)->value("heading")}}</h2> </div> <a href="{{route('all_products')}}" class="see-more-btn">See All</a> </div>
+								<h2>{{App\Models\HeadingModel::where("id", 1)->value("heading")}}</h2> </div> <a href="{{route('all_products')}}" class="see-more-btn">See All</a> </div>
 					</div>
 					<div class="col-md-12">
 						<div class="owl-carousel featured-slider owl-theme">
@@ -240,7 +240,7 @@ $code="INR";
 					<div class="col-md-12">
 						<div class="main-title-tt">
 							<div class="main-title-left">
-								<h2> {{App\HeadingModel::where("id", 2)->value("heading")}} </h2> </div> <a href="{{route('all_products')}}" class="see-more-btn">See All</a> </div>
+								<h2> {{App\Models\HeadingModel::where("id", 2)->value("heading")}} </h2> </div> <a href="{{route('all_products')}}" class="see-more-btn">See All</a> </div>
 					</div>
 					<div class="col-md-12">
 						<div class="owl-carousel deal-slider owl-theme">
@@ -413,7 +413,7 @@ $code="INR";
 					<div class="col-md-12">
 						<div class="main-title-tt">
 							<div class="main-title-left">
-								<h2>{{App\HeadingModel::where("id", 3)->value("heading")}}</h2> </div> <a href="{{route('all_products')}}" class="see-more-btn">See All</a> </div>
+								<h2>{{App\Models\HeadingModel::where("id", 3)->value("heading")}}</h2> </div> <a href="{{route('all_products')}}" class="see-more-btn">See All</a> </div>
 					</div>
 					<div class="col-md-12">
 						<div class="owl-carousel featured-slider owl-theme">
@@ -478,7 +478,7 @@ $code="INR";
 					<div class="col-md-12">
 						<div class="main-title-tt">
 							<div class="main-title-left">
-								<h2>{{App\HeadingModel::where("id", 4)->value("heading")}}</h2> </div>
+								<h2>{{App\Models\HeadingModel::where("id", 4)->value("heading")}}</h2> </div>
 						</div>
 					</div>
 					@foreach($deals as $deal)
@@ -498,7 +498,7 @@ $code="INR";
 				<div class="col-md-12">
 						<div class="main-title-tt">
 							<div class="main-title-left">
-								<h2>{{App\HeadingModel::where("id", 5)->value("heading")}}</h2> </div>
+								<h2>{{App\Models\HeadingModel::where("id", 5)->value("heading")}}</h2> </div>
 						</div>
 					</div>
 					@foreach($new_products->chunk(3) as $chunk)
@@ -531,7 +531,7 @@ $code="INR";
 					<div class="col-md-12">
 						<div class="main-title-tt">
 							<div class="main-title-left">
-								<h2>{{App\HeadingModel::where("id", 6)->value("heading")}}  </h2> </div> <a href="{{route('all_products')}}" class="see-more-btn">See All</a> </div>
+								<h2>{{App\Models\HeadingModel::where("id", 6)->value("heading")}}  </h2> </div> <a href="{{route('all_products')}}" class="see-more-btn">See All</a> </div>
 					</div>
 					<div class="col-md-12">
 						<div class="owl-carousel featured-slider owl-theme">
@@ -576,7 +576,7 @@ $code="INR";
                                                     </div>
 													
 
-									<div class="product-price">{{$code}} {{$value->discounted_price}}@if($value->original-price>$value->discounted_price) <span>{{$code}} {{$value->original_price}}</span>@endif</div>
+									<div class="product-price">{{$code}} {{$value->discounted_price}}@if($value->original_price>$value->discounted_price) <span>{{$code}} {{$value->original_price}}</span>@endif</div>
 										<div class="qty-cart">
 											<div class="quantity buttons_added">
 												<input type="button" value="-" class="minus minus-btn">
